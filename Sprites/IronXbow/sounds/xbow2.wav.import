@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/xbow2.wav-fb016c3817da9826ceda691abb25f1ed.sample"
+
+[deps]
+
+source_file="res://Sprites/IronXbow/sounds/xbow2.wav"
+dest_files=[ "res://.import/xbow2.wav-fb016c3817da9826ceda691abb25f1ed.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
