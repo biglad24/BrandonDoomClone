@@ -1,0 +1,3 @@
+[enu default]
+
+OB_TENACIOUS = "%s was slimed by a Tenacious";

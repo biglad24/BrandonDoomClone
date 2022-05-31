@@ -1,8 +1,12 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://BlenderImports/Test Room.glb" type="PackedScene" id=1]
 [ext_resource path="res://BlenderImports/MATfloor001.material" type="Material" id=2]
 [ext_resource path="res://BlenderImports/MATWall.material" type="Material" id=3]
+
+[sub_resource type="NavigationMesh" id=3]
+vertices = PoolVector3Array( 1.2, 0.4, -3.01724, 3.6, 0.4, -3.31724, 3.6, 0.4, -4.21724, 1.2, 0.4, -4.51724, -4.5, 0.4, 1.18276, 1.2, 0.4, -4.51724, 1.2, 0.4, -11.1172, -5.1, 0.4, -11.1172, -11.1, 0.4, -5.11724, -6.3, 0.4, 1.18276, -4.5, 0.4, 1.18276, 1.2, 0.4, 1.18276, 1.2, 0.4, -3.01724, -11.1, 0.4, -5.11724, -11.1, 0.4, 1.18276, -6.3, 0.4, 1.18276, -4.5, 0.4, 1.18276, 1.2, 0.4, -3.01724, 1.2, 0.4, -4.51724, -5.1, 0.4, -11.1172, -11.1, 0.4, -11.1172, -11.1, 0.4, -5.11724, 14.7, 0.4, 1.48276, 16.2, 0.4, 1.48276, 19.2, 0.4, 1.18276, 19.2, 0.4, -5.11724, 10.5, 0.4, -3.31724, 10.8, 0.4, 1.18276, 14.7, 0.4, 1.48276, 3.6, 0.4, -4.21724, 3.6, 0.4, -3.31724, 10.5, 0.4, -3.31724, 10.5, 0.4, -4.21724, 10.5, 0.4, -4.21724, 10.5, 0.4, -3.31724, 14.7, 0.4, 1.48276, 19.2, 0.4, -5.11724, 19.2, 0.4, -11.1172, 10.8, 0.4, -11.1172, 16.2, 0.4, 1.48276, 14.7, 0.4, 1.48276, 14.4, 0.4, 10.1828, 16.2, 0.4, 11.3828, 5.1, 0.4, 11.3828, 16.2, 0.4, 11.3828, 14.4, 0.4, 10.1828, 4.8, 0.4, 10.1828, -4.5, 0.4, 10.1828, -4.5, 0.4, 1.18276, -6.3, 0.4, 1.18276, -6, 0.4, 11.3828, -4.5, 0.4, 10.1828, -6, 0.4, 11.3828, 5.1, 0.4, 11.3828, 4.8, 0.4, 10.1828 )
+polygons = [ PoolIntArray( 1, 0, 2 ), PoolIntArray( 2, 0, 3 ), PoolIntArray( 9, 8, 4 ), PoolIntArray( 4, 8, 5 ), PoolIntArray( 5, 8, 7 ), PoolIntArray( 5, 7, 6 ), PoolIntArray( 10, 12, 11 ), PoolIntArray( 15, 14, 13 ), PoolIntArray( 18, 17, 16 ), PoolIntArray( 21, 20, 19 ), PoolIntArray( 23, 22, 24 ), PoolIntArray( 24, 22, 25 ), PoolIntArray( 28, 27, 26 ), PoolIntArray( 32, 31, 29 ), PoolIntArray( 29, 31, 30 ), PoolIntArray( 34, 33, 35 ), PoolIntArray( 35, 33, 36 ), PoolIntArray( 36, 33, 37 ), PoolIntArray( 37, 33, 38 ), PoolIntArray( 40, 39, 41 ), PoolIntArray( 41, 39, 42 ), PoolIntArray( 46, 45, 43 ), PoolIntArray( 43, 45, 44 ), PoolIntArray( 48, 47, 49 ), PoolIntArray( 49, 47, 50 ), PoolIntArray( 54, 53, 51 ), PoolIntArray( 51, 53, 52 ) ]
 
 [sub_resource type="ArrayMesh" id=1]
 resource_name = "Test Room_Plane"
@@ -39,8 +43,10 @@ data = PoolVector3Array( -2.0625, 0, -2.5, 1, 0, -6, 1, 0, -2.5, -2.0625, 0, -2.
 [node name="Navigation" type="Navigation" parent="." index="0"]
 
 [node name="NavigationMeshInstance" type="NavigationMeshInstance" parent="Navigation" index="0"]
+navmesh = SubResource( 3 )
 
 [node name="Plane" type="MeshInstance" parent="Navigation/NavigationMeshInstance" index="0"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0 )
 mesh = SubResource( 1 )
 skeleton = NodePath("../../..")
 material/0 = null
@@ -50,3 +56,6 @@ material/1 = null
 
 [node name="CollisionShape" type="CollisionShape" parent="Navigation/NavigationMeshInstance/Plane/StaticBody" index="0"]
 shape = SubResource( 2 )
+
+[node name="Plane" parent="." index="1"]
+visible = false

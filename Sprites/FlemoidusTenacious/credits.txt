@@ -1,0 +1,8 @@
+Submitted: DeathEgg
+Decorate: DeathEgg, Strife
+Sprites: Strife
+("Strife" is the user's name, no relation to the game of the same name)
+
+Description:
+Essentially the Cacodemon, but with a faster projectile.
+One of two Flemoids created for the classic Chex Quest mod "Strife's Level Packs". With Strife's permission, uploaded for others to use in their own Chex Quest mods.

@@ -1,0 +1,10 @@
+Name: Flemoidus Tenacious
+Difficulty: Medium
+Connections: None
+Summon: Tenacious
+Melee: Yes
+Distance: Projectile
+Type: Flemoid
+Brightmaps: No
+Actor modification: No
+ACS: No

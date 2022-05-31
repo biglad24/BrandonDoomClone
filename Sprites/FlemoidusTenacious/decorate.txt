@@ -1,0 +1,61 @@
+ACTOR Tenacious : Cacodemon
+{
+	Game Chex
+	DamageFactor "Flemoid" , 0
+	BloodColor 111 239 103
+	Radius 35
+	Mass 500
+	Speed 10
+	SeeSound "demon/sight"
+	DeathSound "baron/death"
+	Obituary "$OB_TENACIOUS"
+	States
+	{
+	Spawn:
+		TENA C 10 A_Look
+		Loop
+	See:
+		TENA A 3 A_Chase
+		TENA B 1 A_Chase
+		Loop
+	Missile:
+		TENA D 5 A_FaceTarget
+		TENA E 5 BRIGHT A_CustomComboAttack("TenaciousBall", 32, 10 * random(1, 6))
+		TENA F 5 A_FaceTarget
+		Goto See
+	Pain:
+		TENA G 3
+		TENA G 3 A_Pain
+		TENA G 6
+		Goto See
+	Death:
+		TENA H 8 A_Scream
+		TENA I 8
+		TENA J 8
+		TENA K 8 A_NoBlocking
+		TENA L 8 A_SetFloorClip
+		TNT1 A -1
+		Stop
+	Raise:
+		TENA L 8 A_UnSetFloorClip
+		TENA KJIHG 8
+		Goto See
+	}
+}
+
+ACTOR TenaciousBall : CacodemonBall
+{
+	Speed 20
+	FastSpeed 40
+	Damage 4
+	RenderStyle Normal
+	States
+	{
+	Spawn:
+		BAL1 AB 4 BRIGHT
+		Loop
+	Death:
+		BAL1 CDE 6 BRIGHT
+		Stop
+	}
+}
