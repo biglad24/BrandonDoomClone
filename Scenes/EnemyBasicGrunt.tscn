@@ -16,29 +16,29 @@ extents = Vector3( 1.46335, 0.498401, 0.871915 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 2 ), ExtResource( 2 ) ],
-"loop": true,
-"name": "Hit",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 2 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ],
 "loop": false,
 "name": "Die",
-"speed": 5.0
+"speed": 8.0
 }, {
 "frames": [ ExtResource( 8 ), ExtResource( 3 ) ],
 "loop": true,
 "name": "Shoot",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 1 ) ],
+"frames": [ ExtResource( 2 ), ExtResource( 2 ) ],
 "loop": true,
-"name": "Walking",
+"name": "Hit",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 1 ) ],
 "loop": true,
 "name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "Walking",
 "speed": 5.0
 } ]
 

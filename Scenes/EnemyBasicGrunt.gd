@@ -6,7 +6,7 @@ onready var Player = get_tree().get_nodes_in_group("Player")[0]
 var path = [] #hold the path coordinates from the enemy to the player. 
 var path_index = 0 #keep track of which coordinate to go to 
 var speed = 15
-var health = 5
+var health = 20
 
 func _ready():
 	pass
@@ -35,10 +35,9 @@ func death():
 	set_process(false)
 	set_physics_process(false)
 	$CollisionShape.disabled = true
-	if health < -20:
-		$AnimatedSprite3D.play("die")
-	else:
-		$AnimatedSprite3D.play("die")
+	if health < 0:
+		$AnimatedSprite3D.play("Die")
+	
 	
 
 func shoot(target):
