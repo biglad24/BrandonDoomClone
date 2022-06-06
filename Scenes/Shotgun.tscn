@@ -12,10 +12,10 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 9 ), ExtResource( 5 ), ExtResource( 2 ), ExtResource( 7 ), ExtResource( 1 ), ExtResource( 8 ), ExtResource( 8 ), ExtResource( 8 ), ExtResource( 8 ), ExtResource( 8 ) ],
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 9 ), ExtResource( 5 ), ExtResource( 2 ), ExtResource( 7 ), ExtResource( 1 ), ExtResource( 8 ), ExtResource( 8 ), ExtResource( 8 ) ],
 "loop": true,
 "name": "Shoot",
-"speed": 3.0
+"speed": 20.0
 }, {
 "frames": [ ExtResource( 3 ) ],
 "loop": true,
@@ -37,7 +37,7 @@ margin_left = -40.0
 margin_top = -40.0
 
 [node name="GunSprite" type="AnimatedSprite" parent="CanvasLayer/Control"]
-position = Vector2( -147, 40 )
+position = Vector2( -396, 37 )
 rotation = 3.14159
 scale = Vector2( 2, 2 )
 frames = SubResource( 1 )
