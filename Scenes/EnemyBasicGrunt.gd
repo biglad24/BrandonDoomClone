@@ -20,7 +20,6 @@ func take_damage(dmg_amount):
 	move = false
 	$AnimatedSprite3D.play("hit")
 	yield($AnimatedSprite3D,"animation_finished")
-	$AnimatedSprite3D.play("walking")
 	move = true
 	
 func _physics_process(delta):
@@ -30,6 +29,7 @@ func _physics_process(delta):
 			path_index += 1 
 		else:
 			if move: 
+				$AnimatedSprite3D.play("walking")
 				move_and_slide(direction.normalized() * speed, Vector3.UP)
 			 
 		
