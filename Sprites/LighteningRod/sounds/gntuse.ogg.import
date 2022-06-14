@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/gntuse.ogg-56cc42375e63f83d698ff54f795c1fca.oggstr"
+
+[deps]
+
+source_file="res://Sprites/LighteningRod/sounds/gntuse.ogg"
+dest_files=[ "res://.import/gntuse.ogg-56cc42375e63f83d698ff54f795c1fca.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

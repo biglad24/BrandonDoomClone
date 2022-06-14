@@ -1,0 +1,4 @@
+RodHit          GNTFUL
+
+SuperRodShoot   GNTHIT
+SuperRodHit     GNTUSE

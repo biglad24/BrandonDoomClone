@@ -11,8 +11,9 @@ func _ready():
 #gun variables
 onready var pistol = preload("res://Scenes/Pistol.tscn")
 onready var shotgun = preload("res://Scenes/Shotgun.tscn")
+onready var uzi = preload("res://Scenes/UZI.tscn")
 var current_gun = 0
-onready var carried_guns = [pistol,shotgun]
+onready var carried_guns = [pistol,shotgun,uzi]
 
 
 

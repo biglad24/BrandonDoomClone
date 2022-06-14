@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/wind_sl.ogg-26176ee047c4704403b51eb8320e3f00.oggstr"
+
+[deps]
+
+source_file="res://Sprites/HolySnow/sounds/wind_sl.ogg"
+dest_files=[ "res://.import/wind_sl.ogg-26176ee047c4704403b51eb8320e3f00.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -10,6 +10,7 @@ var damage = 8
 var can_shoot = true
 
 
+
 func _ready():
 	gun_sprite.play("Idle")
 	
@@ -33,7 +34,7 @@ func make_flash():
 	
 	
 func _process(delta):
-	if Input.is_action_just_pressed("Shoot") and can_shoot:
+	if Input.is_action_pressed("Shoot") and can_shoot:
 		gun_sprite.play("Shoot")
 		make_flash()
 		check_hit()
@@ -44,3 +45,7 @@ func _process(delta):
 		
 		can_shoot = true
 		gun_sprite.play("Idle")
+
+
+func _on_Timer_timeout():
+	can_shoot = true# Replace with function body.

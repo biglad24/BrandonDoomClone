@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/nixfull1.ogg-6adbe00a248a3b22ef1f9e5802f1862d.oggstr"
+
+[deps]
+
+source_file="res://Sprites/HolySnow/sounds/nixfull1.ogg"
+dest_files=[ "res://.import/nixfull1.ogg-6adbe00a248a3b22ef1f9e5802f1862d.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

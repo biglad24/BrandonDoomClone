@@ -21,11 +21,6 @@ animations = [ {
 "name": "Die",
 "speed": 8.0
 }, {
-"frames": [ ExtResource( 8 ), ExtResource( 3 ) ],
-"loop": true,
-"name": "Shoot",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 2 ), ExtResource( 2 ) ],
 "loop": true,
 "name": "Hit",
@@ -33,12 +28,17 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 1 ) ],
 "loop": true,
-"name": "Idle",
+"name": "Walking",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 1 ) ],
 "loop": true,
-"name": "Walking",
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "Shoot",
 "speed": 5.0
 } ]
 
