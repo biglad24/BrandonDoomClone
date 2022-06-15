@@ -1,0 +1,6 @@
+Submitted: TODM
+Decorate: TODM
+Sounds: Valve
+Sprites: 'Nam
+Sprite Edit: TODM
+Idea Base: "Thumper" From MW2, GL from Left 4 Dead, An Arched Grenade Luancher that Explodes On Impact

@@ -1,23 +1,22 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Sprites/LighteningRod/SPRITES/lrodb0.png" type="Texture" id=1]
-[ext_resource path="res://Sprites/LighteningRod/SPRITES/lrodc0.png" type="Texture" id=2]
-[ext_resource path="res://Sprites/LighteningRod/SPRITES/lrodd0.png" type="Texture" id=3]
-[ext_resource path="res://Sprites/LighteningRod/SPRITES/lroda0.png" type="Texture" id=4]
-[ext_resource path="res://Sprites/LighteningRod/SPRITES/lrode0.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/UberMinigun/SPRITES/minga0.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/Pistol.gd" type="Script" id=6]
+[ext_resource path="res://Sprites/UberMinigun/SPRITES/minfa0.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/UberMinigun/SPRITES/minfc0.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/UberMinigun/SPRITES/minfb0.png" type="Texture" id=11]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 4 ) ],
+"frames": [ ExtResource( 10 ), ExtResource( 11 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "Shoot",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 1 ) ],
 "loop": true,
 "name": "Idle",
 "speed": 5.0
-}, {
-"frames": [ ExtResource( 4 ), ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 5 ) ],
-"loop": true,
-"name": "Shoot",
-"speed": 8.0
 } ]
 
 [node name="Uzi" type="Spatial"]
@@ -34,12 +33,11 @@ margin_left = -40.0
 margin_top = -40.0
 
 [node name="GunSprite" type="AnimatedSprite" parent="CanvasLayer/Control"]
-position = Vector2( -289, 38 )
+position = Vector2( 53, 36 )
 rotation = 3.14159
 scale = Vector2( 2, 2 )
 frames = SubResource( 1 )
 animation = "Shoot"
-frame = 2
 playing = true
 centered = false
 flip_h = true

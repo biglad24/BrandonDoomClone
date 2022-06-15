@@ -5,7 +5,7 @@ onready var gun_sprite = $CanvasLayer/Control/GunSprite
 onready var gun_rays = $GunRays.get_children()
 onready var flash 
 onready var blood = preload("res://Scenes/Blood.tscn")
-var damage = 8
+var damage = 6
 
 var can_shoot = true
 

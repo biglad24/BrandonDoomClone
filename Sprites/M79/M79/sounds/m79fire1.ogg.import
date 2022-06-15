@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/m79fire1.ogg-80ac3d201ac27ced0fc636e5d3c4ff96.oggstr"
+
+[deps]
+
+source_file="res://Sprites/M79/M79/sounds/m79fire1.ogg"
+dest_files=[ "res://.import/m79fire1.ogg-80ac3d201ac27ced0fc636e5d3c4ff96.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,9 @@
+Name: M79
+Class: 5
+Type: Projectile
+Palette: Custom
+Summon: M79
+Ammo Type: M79Ammo
+Altfire: No
+Powered Mode: No
+Added States: No

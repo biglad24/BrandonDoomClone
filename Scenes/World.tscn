@@ -8,9 +8,10 @@
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.268295, 0 )
 
 [node name="EnemyBasicGrunt" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3576, 2.15008, -10.3839 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3576, -0.777753, -10.3839 )
 
 [node name="Test Room" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.151191, -2.39843, -1.50147 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.31904, -4.07549 )

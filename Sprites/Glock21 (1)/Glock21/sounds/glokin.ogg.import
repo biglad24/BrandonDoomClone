@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/glokin.ogg-72850acc25076de869239aeec1a26aae.oggstr"
+
+[deps]
+
+source_file="res://Sprites/Glock21 (1)/Glock21/sounds/glokin.ogg"
+dest_files=[ "res://.import/glokin.ogg-72850acc25076de869239aeec1a26aae.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

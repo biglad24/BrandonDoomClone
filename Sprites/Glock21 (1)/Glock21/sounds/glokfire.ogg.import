@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/glokfire.ogg-64dc4842d83f2c20802a313bc32a81a3.oggstr"
+
+[deps]
+
+source_file="res://Sprites/Glock21 (1)/Glock21/sounds/glokfire.ogg"
+dest_files=[ "res://.import/glokfire.ogg-64dc4842d83f2c20802a313bc32a81a3.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
