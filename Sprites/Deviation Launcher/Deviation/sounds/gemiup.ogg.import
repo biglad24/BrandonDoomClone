@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/gemiup.ogg-76530b9efe615c9517b5f726c6d39c2e.oggstr"
+
+[deps]
+
+source_file="res://Sprites/Deviation Launcher/Deviation/sounds/gemiup.ogg"
+dest_files=[ "res://.import/gemiup.ogg-76530b9efe615c9517b5f726c6d39c2e.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

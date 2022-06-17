@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/gemifir4.ogg-cb35dfc674e3fde15d225852890d56d9.oggstr"
+
+[deps]
+
+source_file="res://Sprites/Deviation Launcher/Deviation/sounds/gemifir4.ogg"
+dest_files=[ "res://.import/gemifir4.ogg-cb35dfc674e3fde15d225852890d56d9.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

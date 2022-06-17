@@ -1,0 +1,7 @@
+//Deviation Dumb Missile Launcher
+weapons/gemiup		GEMIUP
+weapons/gemifire1	GEMIFIR1
+weapons/gemifire2	GEMIFIR2
+weapons/gemifire3	GEMIFIR3
+weapons/gemifire4	GEMIFIR4
+$random weapons/gemifire	{ weapons/gemifire1 weapons/gemifire2 weapons/gemifire3 weapons/gemifire4 }

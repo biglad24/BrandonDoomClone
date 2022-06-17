@@ -1,0 +1,8 @@
+Name: Deviation Dumb Missile Launcher
+Class: 5
+Type: Projectile
+Palette: Custom
+Summon: Deviation
+Ammo Type: RocketAmmo
+Altfire: No
+Powered Mode: N\A
