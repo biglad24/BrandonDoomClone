@@ -34,7 +34,7 @@ func make_flash():
 	
 	
 func _process(delta):
-	if Input.is_action_pressed("Shoot") and can_shoot:
+	if Input.is_action_pressed("Shoot") and can_shoot and PlayerStats.ammo_pistol > 0: 
 		gun_sprite.play("Shoot")
 		make_flash()
 		check_hit()

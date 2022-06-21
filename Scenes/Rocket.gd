@@ -4,7 +4,8 @@ var rocket_speed = 20
 var rocket_damage = 25
 
 
-
+func _ready():
+	print("hello")
 
 func deal_damage():
 	var enemies = get_overlapping_bodies()
