@@ -64,13 +64,13 @@ align = 2
 [node name="Ammo" type="VBoxContainer" parent="MarginContainer/Stats"]
 margin_left = 208.0
 margin_right = 984.0
-margin_bottom = 560.0
+margin_bottom = 22.0
 size_flags_horizontal = 3
+size_flags_vertical = 0
 alignment = 2
 
 [node name="AmmoValue" type="Label" parent="MarginContainer/Stats/Ammo"]
-margin_top = 538.0
 margin_right = 776.0
-margin_bottom = 560.0
+margin_bottom = 22.0
 text = "0"
 align = 2
