@@ -14,6 +14,9 @@ var move = true
 
 
 var searching = false
+var shooting = false
+var dead = false
+ 
 onready var ray = $Visual
 
 
@@ -31,8 +34,10 @@ func take_damage(dmg_amount):
 	move = true
 	
 func _physics_process(delta):
+	if dead:
+		return
 	look_at_player()
-	if searching:
+	if searching and not shooting:
 		if path_index < path.size():
 			var direction = (path[path_index] - global_transform.origin)
 			if direction.length() < 1:
@@ -43,7 +48,8 @@ func _physics_process(delta):
 					move_and_slide(direction.normalized() * speed, Vector3.UP)
 			 
 	else:
-		$AnimatedSprite3D.play("Idle")
+		if not shooting:
+			$AnimatedSprite3D.play("Idle")
 
 
 func look_at_player():
@@ -69,6 +75,7 @@ func find_path(target):
 	
 	
 func death():
+	dead = true
 	set_process(false)
 	set_physics_process(false)
 	$CollisionShape.disabled = true
@@ -80,6 +87,8 @@ func death():
 func shoot(target):
 	pass
 	
+func _on_ShootTimer_timeout():
+	shoot(player)
 
 
 func _on_Timer_timeout():

@@ -16,14 +16,14 @@ extents = Vector3( 1.46335, 0.498401, 0.871915 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 8 ), ExtResource( 3 ) ],
-"loop": true,
-"name": "Shoot",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 1 ) ],
 "loop": true,
 "name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "Shoot",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 2 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ],
@@ -70,6 +70,10 @@ autostart = true
 
 [node name="CollisionShape2" type="CollisionShape" parent="Aural"]
 shape = SubResource( 4 )
+
+[node name="ShootTimer" type="Timer" parent="."]
+wait_time = 2.5
+autostart = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 [connection signal="body_entered" from="Aural" to="." method="_on_Aural_body_entered"]
