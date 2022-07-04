@@ -16,6 +16,8 @@ var move = true
 var searching = false
 var shooting = false
 var dead = false
+
+var damage = 8
  
 onready var ray = $Visual
 
@@ -84,11 +86,21 @@ func death():
 	
 	
 
-func shoot(target):
-	pass
+func shoot():
+	if searching and not dead and not shooting:
+		$AnimatedSprite3D.play("Shoot")
+		shooting = true
+		yield($AnimatedSprite3D, "frame_changed")
+		if ray.get_collider().is_in_group("Player"):
+			PlayerStats.change_health(-damage)
+		yield($AnimatedSprite3,"animation_finished")
+		shooting = false
+	
+	
+	
 	
 func _on_ShootTimer_timeout():
-	shoot(player)
+	shoot()
 
 
 func _on_Timer_timeout():
