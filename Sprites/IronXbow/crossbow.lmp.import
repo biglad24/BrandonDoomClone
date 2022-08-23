@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.palette"
+type="Resource"
+path="res://.import/crossbow.lmp-da72407eb6a663ae8052721aabbd0863.tres"
+
+[deps]
+
+source_file="res://Sprites/IronXbow/crossbow.lmp"
+dest_files=[ "res://.import/crossbow.lmp-da72407eb6a663ae8052721aabbd0863.tres" ]
+
+[params]
+

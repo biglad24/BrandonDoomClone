@@ -88,7 +88,7 @@ func death():
 
 func shoot():
 	if searching and not dead and not shooting:
-		$AnimatedSprite3D.play("Shoot")
+		$AnimatedSprite3D.play("shoot")
 		shooting = true
 		yield($AnimatedSprite3D, "frame_changed")
 		if ray.get_collider().is_in_group("Player"):

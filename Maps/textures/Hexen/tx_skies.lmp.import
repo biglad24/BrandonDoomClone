@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.palette"
+type="Resource"
+path="res://.import/tx_skies.lmp-ddba8eb10f562287c68eace043523332.tres"
+
+[deps]
+
+source_file="res://Maps/textures/Hexen/tx_skies.lmp"
+dest_files=[ "res://.import/tx_skies.lmp-ddba8eb10f562287c68eace043523332.tres" ]
+
+[params]
+

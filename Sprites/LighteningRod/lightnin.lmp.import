@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.palette"
+type="Resource"
+path="res://.import/lightnin.lmp-3c4e82cdc31ff661fa33b9a02c0209f6.tres"
+
+[deps]
+
+source_file="res://Sprites/LighteningRod/lightnin.lmp"
+dest_files=[ "res://.import/lightnin.lmp-3c4e82cdc31ff661fa33b9a02c0209f6.tres" ]
+
+[params]
+

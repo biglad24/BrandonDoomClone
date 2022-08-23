@@ -1,0 +1,13 @@
+[remap]
+
+importer="qodot.palette"
+type="Resource"
+path="res://.import/tx_anims.lmp-32fe2309075bd4a6a29d96b112ef252b.tres"
+
+[deps]
+
+source_file="res://Maps/textures/Hexen/tx_anims.lmp"
+dest_files=[ "res://.import/tx_anims.lmp-32fe2309075bd4a6a29d96b112ef252b.tres" ]
+
+[params]
+
