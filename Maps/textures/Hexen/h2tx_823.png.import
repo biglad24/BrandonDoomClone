@@ -2,29 +2,31 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/h2tx_823.png-52db801d40969c6d524cec2966e6e6af.stex"
+path.s3tc="res://.import/h2tx_823.png-52db801d40969c6d524cec2966e6e6af.s3tc.stex"
+path.etc2="res://.import/h2tx_823.png-52db801d40969c6d524cec2966e6e6af.etc2.stex"
 metadata={
-"vram_texture": false
+"imported_formats": [ "s3tc", "etc2" ],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://Maps/textures/Hexen/h2tx_823.png"
-dest_files=[ "res://.import/h2tx_823.png-52db801d40969c6d524cec2966e6e6af.stex" ]
+dest_files=[ "res://.import/h2tx_823.png-52db801d40969c6d524cec2966e6e6af.s3tc.stex", "res://.import/h2tx_823.png-52db801d40969c6d524cec2966e6e6af.etc2.stex" ]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
-flags/repeat=0
-flags/filter=false
-flags/mipmaps=false
+flags/repeat=1
+flags/filter=true
+flags/mipmaps=true
 flags/anisotropic=false
 flags/srgb=2
-process/fix_alpha_border=true
+process/fix_alpha_border=false
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
