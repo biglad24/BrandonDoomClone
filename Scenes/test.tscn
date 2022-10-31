@@ -1,20 +1,20 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Scenes/Test Room.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/World.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/EnemyBasicGrunt.tscn" type="PackedScene" id=4]
 
 [node name="World" type="Spatial"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.268295, 0 )
 
+[node name="EnemyBasicGrunt" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.26378, -92.2649 )
+
 [node name="HUD" parent="." instance=ExtResource( 3 )]
 
-[node name="EnemyBasicGrunt" parent="." instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3576, -0.777753, -10.3839 )
-
-[node name="Test Room" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.151191, -2.39843, -1.50147 )
-
 [node name="Player" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.31904, -4.07549 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.92065, 4.88871, -4.88807 )
+visible = false
+
+[node name="Level1" parent="." instance=ExtResource( 2 )]

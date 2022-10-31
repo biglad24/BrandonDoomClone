@@ -1,4 +1,4 @@
-[gd_scene load_steps=500 format=2]
+[gd_scene load_steps=501 format=2]
 
 [ext_resource path="res://addons/qodot/src/nodes/qodot_map.gd" type="Script" id=1]
 [ext_resource path="res://addons/qodot/game_definitions/fgd/qodot_fgd.tres" type="Resource" id=2]
@@ -135,6 +135,9 @@ surfaces/0 = {
 
 [sub_resource type="ConvexPolygonShape" id=472]
 points = PoolVector3Array( -1, 2.5, -0.5, -1, -2.5, -0.5, 1, -2.5, -0.5, 1, 2.5, -0.5, -1, 2.5, 0.5, -1, -2.5, 0.5, 1, -2.5, 0.5, 1, 2.5, 0.5 )
+
+[sub_resource type="Animation" id=474]
+resource_name = "OpenDoor"
 
 [sub_resource type="SpatialMaterial" id=1]
 
@@ -1882,6 +1885,9 @@ mesh = SubResource( 471 )
 [node name="entity_7_brush_0_collision_shape" type="CollisionShape" parent="Door7"]
 shape = SubResource( 472 )
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Door7"]
+anims/OpenDoor = SubResource( 474 )
+
 [node name="QodotMap" type="Spatial" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.553667, 1.85094, -1.57254 )
 script = ExtResource( 1 )
@@ -1902,7 +1908,7 @@ use_trenchbroom_group_hierarchy = false
 tree_attach_batch_size = 16
 set_owner_batch_size = 16
 
-[node name="Navigation" type="Navigation" parent="QodotMap"]
+[node name="Navigation" type="Navigation" parent="QodotMap" groups=["NavMesh"]]
 
 [node name="NavigationMeshInstance" type="NavigationMeshInstance" parent="QodotMap/Navigation"]
 navmesh = SubResource( 473 )

@@ -93,7 +93,7 @@ func shoot():
 		yield($AnimatedSprite3D, "frame_changed")
 		if ray.get_collider().is_in_group("Player"):
 			PlayerStats.change_health(-damage)
-		yield($AnimatedSprite3,"animation_finished")
+		yield($AnimatedSprite3D,"animation_finished")
 		shooting = false
 	
 	
